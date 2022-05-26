@@ -101,14 +101,14 @@ export default class LayoutSidebar extends Vue {
 
   sidebarAdminData = [
     {
-      title: "User Manajemen",
+      title: "User Management",
       icon: "account",
       link: "/user-management",
     },
     {
       title: "Warehouse Setting",
       icon: "warehouse",
-      link: "/warehouse",
+      link: "/warehouse-setting",
     },
   ];
 
