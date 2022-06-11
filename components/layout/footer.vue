@@ -1,76 +1,6 @@
 <template>
-  <div>
-    <template>
-    <b-navbar class="mt-0 pt-20 bg-emerald-900	">      
-        <template #brand >
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">              
-            </b-navbar-item>
-            <b-field class="mt-6">
-            <b-input placeholder="Search..."
-                type="search"
-                icon="magnify"
-                icon-clickable
-                @icon-click="searchIconClick">
-            </b-input>
-        </b-field>
-        </template>       
-        <template #start >
-            <b-navbar-dropdown label="All Departements">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            <b-navbar-dropdown label="Home">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            <b-navbar-dropdown label="Shop">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            <b-navbar-dropdown label="Pages">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            <b-navbar-dropdown label="Blog">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-              <b-navbar-item href="#" >
-                Contact
-            </b-navbar-item>
-            <b-navbar-dropdown label="Recently Viewed" class="ml-80 ">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-            
-        </template>
-    </b-navbar>
- </template>
-<div id="page-container">
+
+  <div id="page-container">
     <div id="content-wrap"></div>
     <footer id="footer">
       <footer
@@ -80,7 +10,7 @@
         <div class="container p-4 pb-0">
           <div class="row">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+              <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
               <p>
                 Here you can use rows and columns to organize your footer
                 content.
@@ -184,7 +114,8 @@
       </footer>
     </footer>
   </div>
-  
+        </template>
+</template>
   </div>
 </template>
 <script lang="ts">
@@ -192,7 +123,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component
-export default class LayoutHeader extends Vue {
+export default class LayoutFooter extends Vue {
   onMenuClickedMobile() {
     this.$emit("onmenuclickedmobile");
   }
